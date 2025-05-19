@@ -759,29 +759,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 824615249}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc155c8003b832c4eb17c29102806456, type: 3}
+  m_Script: {fileID: 11500000, guid: 8cbc0b0b5337e9c489bdd90f3b8a5ee6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cubePrefab: {fileID: 144340120827744427, guid: a470cce073cc01c44871db6a90edf63d,
-    type: 3}
+  deathHeight: -20
 --- !u!4 &824615251
 Transform:
   m_ObjectHideFlags: 0
