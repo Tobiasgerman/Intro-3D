@@ -6,6 +6,7 @@ using TMPro;
 public class deteccionDeColisiones : MonoBehaviour
 {
     public scoreManager scoreManager;
+    public int points;
   
 
     void Start()
@@ -20,7 +21,7 @@ public class deteccionDeColisiones : MonoBehaviour
         if (col.gameObject.name == "Player")
         {
             Destroy(gameObject);
-            scoreManager.AddScore();
+            scoreManager.AddScore(points);
         }
     }
 }
