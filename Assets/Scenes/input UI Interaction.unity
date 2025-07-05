@@ -527,10 +527,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1368804572}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fcddaf97a4047a54d8b5305a0cf75b9d, type: 3}
+  m_Script: {fileID: 11500000, guid: 57df39c5d5816ca42835738d402c571f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   UIInteractionMessage: {fileID: 434894933}
+  canInteract: 0
+  mercaderia: {fileID: 1890809429}
 --- !u!1 &1578845613
 GameObject:
   m_ObjectHideFlags: 0
@@ -996,7 +998,7 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1306411582}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1890809428
+--- !u!114 &1890809429
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
