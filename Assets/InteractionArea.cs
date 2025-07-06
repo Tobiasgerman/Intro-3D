@@ -7,10 +7,13 @@ public class InteractionArea : MonoBehaviour
     public GameObject UIInteractionMessage;
     public bool canInteract;
     public deteccionDeColisiones colisiones;
+    public scoreManager scoreManager;
+    public int points;
 
     void Start()
     {
         UIInteractionMessage.SetActive(false);
+        scoreManager = FindObjectOfType<scoreManager>();
     }
 
     void Update()
@@ -20,6 +23,7 @@ public class InteractionArea : MonoBehaviour
             if (canInteract) 
             {
                 Destroy(colisiones.gameObject);
+                scoreManager.AddScore(points);
                 EndInteraction();
             }
         }
@@ -27,7 +31,7 @@ public class InteractionArea : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        Debug.Log(other.gameObject.name);
+       // Debug.Log(other.gameObject.name);
         colisiones = other.GetComponent<deteccionDeColisiones>();
         if (colisiones)
         {

@@ -13,13 +13,15 @@ public class Daño : MonoBehaviour
 
     private void OnCollisionEnter(Collision col) // funcion para que suceda algo cuando suceda una colision
     {
-        Debug.Log("Contacto");
+        Debug.Log("Contacto" + col.gameObject.name);
 
-        if (col.gameObject.name == "Player")
+        if (col.gameObject.name == "SimpleFPSController")
         {
-            Destroy(gameObject);
+            //Destroy(gameObject);
             healtManager.Takedamage(10);
+            Debug.Log("Daño");
         }
     }
+    
 
 }
