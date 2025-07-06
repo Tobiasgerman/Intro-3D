@@ -20,9 +20,9 @@ public class scoreManager : MonoBehaviour
         uIManager.Updatescore(score);
     }
 
-    public void AddScore(int scorePoints)
+    public void AddScore(int scoretoAdd)
     {
-        score += scorePoints;
+        score += scoretoAdd;
         uIManager.Updatescore(score);
     }
 
